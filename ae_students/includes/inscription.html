@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/screen.css">
+    <title>Auto École | Inscription</title>
+    <script src="../cordova.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/function.js"></script>
+</head>
+<body>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-75391602-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<?php include_once("analyticstracking.php") ?>
+
+    <div class="container">
+        <div id="statusbar">
+            <a href="connexion.html"><img id="back" src="../img/back.png"></a>
+            <h1 id="statustitle">Inscription au service AE</h1>
+        </div>
+        <center>
+            <div class="head"><img class="logo" src="../img/ae.png"></div>   
+                    <input id="login" class="input" placeholder="Identifiant" value="PC134" required><br><br>
+                    <input id="mail" class="input" type="mail" placeholder="Addresse Email" value="pc134@groupe-malesherbes.com" required><br><br>
+                    <input type="tel" id="phone" placeholder="Téléphone" maxlength="10" hidden>
+                    <input id="pwd" class="input" type="password" placeholder="Mot de passe" value="@userPC134@" required><br><br>
+                    <input id="pass2" class="input" type="password" placeholder="Confirmation" value="@userPC134@" required><br>
+                    <div id="result"></div>
+                    <button id="button" onclick="loading();register();">Je m'inscris!</button>
+        </center>
+    </div>
+    <script>
+        function handleTouchMove(e) { e.preventDefault(); }
+        document.addEventListener('touchmove', handleTouchMove, false);
+        document.addEventListener('deviceready', onDeviceReady, true);
+        function onDeviceReady()
+        {
+            //appel des fonctions google analytics par notre ID google analytics :
+            window.analytics.startTrackerWithId('UA-75391602-1')
+
+            getPhone();
+            var phone = localStorage.getItem("phone");
+            if (phone != "error")
+                $("#phone").val(phone);
+        }
+    </script>
+</body>
+</html>

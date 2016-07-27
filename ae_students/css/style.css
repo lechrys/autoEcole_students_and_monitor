@@ -1,0 +1,1247 @@
+/*              Style de base
+** Vert #0F979F
+** Violet #461946
+** Jaune #FAB91E
+**				Style Material
+** Teal 500 #009688 et 700 #00796B
+** Violet 800 #6A1B9A
+** Jaune 600 #FDD835
+*/
+/*Sass Dispo */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto';
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+button {
+    outline: none;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+    -webkit-overflow-scrolling: auto;
+}
+
+#rendercontent {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Logo */
+.head {
+    margin-top: 40px;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    height: 90px;
+}
+
+/*Etoiles notation page mon compte*/
+.star {
+    width: 35px;
+    height: 35px;
+}
+
+/* Styles des différents inputs: inputpay = imput page paiement et ray pour le rayon dans les options input3 pour les notes*/
+
+.input {
+    background-color: #009688;
+    color: white;
+    border-color: transparent;
+    width: 66%;
+    display: inline-block;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+}
+
+.inputpay {
+    background-color: #009688;
+    color: white;
+    height: 28px;
+    border-color: transparent;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+
+#ray {
+    background-color: #009688;
+    color: white;
+    height: 25px;
+    border-color: transparent;
+    width: 50px;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+/* Style des connections avec icones ae, facebook et google plus*/
+.connexion {
+    background-size: contain;
+    background-color: transparent;
+    background-image: url('../img/connexion.png');
+    background-repeat: no-repeat;
+    border-color: transparent;
+    border-radius: 20px;
+    height: 110px;
+    width: 120px;
+    margin-top: -5px;
+    outline: none;
+}
+
+/* Différents types de barres horizontales */
+.hr {
+    width: 80%;
+    height: 3px;
+    background-color: #009688;
+}
+
+.hrs {
+    height: 3px;
+    background-color: #009688;
+}
+
+/* Style lié à la barre de statut et du titre */
+
+#statusbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    background-color: #00796B;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    z-index: 1200;
+}
+
+#statusbar h1 {
+    float: left;
+    margin-left: 5%;
+    font-size: 14px;
+}
+
+#statustitle a {
+    text-decoration: none;
+}
+
+#statustitle {
+    position: absolute;
+    color: white;
+    top: 5px;
+    left: 25px;
+    z-index: 4000;
+}
+
+#topmenu {
+    position: absolute;
+    margin-top: 0px;
+    top: 8px;
+    right: 5px;
+    float: right;
+    z-index: 4100;
+}
+
+#status, #result {
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+#back {
+    margin-left: 8px;
+    float: left;
+    outline: none;
+    float: 8000;
+}
+
+/* style des boutton*/
+
+#button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    width: 40%;
+    outline: none;
+    font-weight: 800;
+}
+
+#medbutton {
+    background-color: #009688;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    width: 49.99%;
+    outline: none;
+    font-weight: 800;
+}
+
+#bigbutton {
+    background-color: #009688;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    width: 70%;
+    outline: none;
+    font-weight: 800;
+}
+
+.bigbutton {
+    background-color: #009688;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    width: 70%;
+    outline: none;
+    font-weight: 800;
+}
+
+/*Boutons dans les paramètres*/
+#roundbutton {
+    background-color: #009688;
+    color: white;
+    border: none;
+    height: 80px;
+    margin-top: 20px;
+    border-radius: 80px;
+    width: 80px;
+    outline: none;
+}
+
+#button:hover, #medbutton:hover, #bigbutton:hover, #roundbutton:hover {
+    transition: background-color 0.5s ease-out;
+    background-color: #20B2AA;
+}
+
+/*Bouton annulation heure de cours dans planning*/
+#planbutton {
+    background-color: #009688;
+    color: white;
+    border: none;
+    height: 35px;
+    width: 100%;
+    border-bottom: solid 1px;
+    outline: none;
+}
+
+/*Button Planning Previous*/
+#bpp {
+    background-image: url('../img/gback.png');
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+/*Button Planning Next*/
+#bpn {
+    background-image: url('../img/gnext.png');
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+/*Retour à la carte depuis la prise de leçons*/
+#tomap {
+    background: rgba(255, 255, 255, 0.85) url(../img/position.png) center no-repeat;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-top: 10%;
+    float: right;
+    z-index: 100;
+    border: 1px solid;
+    right: 5px;
+    outline: none;
+}
+
+/* Eléments de la carte: Barre de recherche, bouttons sur la carte et spashArt*/
+#map_canvas {
+    position: absolute;
+    top: 72px;
+    bottom: 12%;
+    width: 100%;
+    height: auto;
+}
+
+/*Barre de recherche*/
+#pac-input {
+    border: 1px solid;
+    border-right: 0;
+    box-sizing: border-box;
+    width: 90%;
+    height: 32px;
+    padding: 0 11px 0px 32px;
+    background: white url('../img/search.png') left no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/*Position par défault*/
+#mapbutton {
+    border: 1px solid;
+    width: 10%;
+    height: 32px;
+    outline: none;
+    background: white url('../img/target.png') center no-repeat;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#icon {
+
+    position: absolute;
+    background: url(http://62.210.192.92/Users/wp-content/uploads/Man_0.png) no-repeat;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -34px;
+    height: 34px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.mapright {
+    position: absolute;
+    height: 40px;
+    top: 90px;
+    right: 0px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 800;
+    background: #00796B;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#list_title {
+    margin-left: 30px;
+}
+
+#maplist {
+    position: absolute;
+    top: 25%;
+    width: 20px;
+    height: 20px;
+    content: url('../img/list.png');
+}
+
+.hidden_mapright {
+    visibility: hidden;
+    position: absolute;
+    height: 40px;
+    top: 90px;
+    right: 0px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 800;
+    background: #00796B;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.hidden_Joe {
+    visibility: hidden;
+
+}
+
+.visible {
+    visibility: visible;
+}
+
+.visible_mapright {
+
+    visibility: visible;
+    position: absolute;
+    height: 40px;
+    top: 90px;
+    right: 0px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 800;
+    background: #00796B;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+.hidden_liste {
+    visibility: hidden;
+    position: absolute;
+    height: 40px;
+    top: 90px;
+    right: 0px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 800;
+    background: #00796B;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#mapplan {
+    width: 20px;
+    height: 20px;
+    content: url('../img/lesson.png')
+}
+
+/*Boutons sur la carte*/
+
+.mapbutton2 {
+    z-index: 100;
+    border: 1px black solid;
+    width: 50%;
+    height: 12%;
+    background: #00796B;
+    position: absolute;
+    bottom: 0px;
+    border-right: none;
+    font-weight: 600;
+    font-size: 120%;
+    outline: none;
+    color: white;
+}
+
+.mapbutton3 {
+    border: 1px black solid;
+    width: 33.33%;
+    height: 12%;
+    background: #00796B;
+    position: absolute;
+    bottom: 0px;
+    border-right: none;
+    font-weight: 600;
+    font-size: 120%;
+    outline: none;
+    color: white;
+}
+
+#mapsplash {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    bottom: 15px;
+    z-index: 5000;
+    position: absolute;
+}
+
+/*Bouton sélection par liste*/
+.selectbutton {
+    border: 1px black solid;
+    height: 10%;
+    width: 50%;
+    bottom: 0px;
+    z-index: 800;
+    background-color: #00796B;
+    position: fixed;
+    font-size: 120%;
+    font-weight: 600;
+    outline: none;
+    color: white;
+}
+
+.buttonright {
+    float: right;
+    right: 0px;
+    outline: none;
+}
+
+.buttonmid {
+    left: 33.33%;
+    outline: none;
+}
+
+.buttonleft {
+    float: left;
+    left: 0px;
+    outline: none;
+}
+
+/*Notation étoile, fait à l'aide de : rog.ie/blog/css-star-rater*/
+.star-rating {
+    font-size: 0;
+    white-space: nowrap;
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: url('../img/ms.png');
+    background-size: contain;
+}
+
+.star-rating i {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 1;
+    background: url("../img/mfs.png");
+    background-size: contain;
+}
+
+.star-rating input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.star-rating input:checked + i {
+    opacity: 1;
+}
+
+.star-rating i ~ i {
+    width: 40%;
+}
+
+.star-rating i ~ i ~ i {
+    width: 60%;
+}
+
+.star-rating i ~ i ~ i ~ i {
+    width: 80%;
+}
+
+.star-rating i ~ i ~ i ~ i ~ i {
+    width: 100%;
+}
+
+::after,
+::before {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ON/OFF Switch from Protos.io, IOS Style pour page paramètres*/
+
+.onoffswitch {
+    position: relative;
+    width: 90px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin: 0 auto;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #009688;
+    border-radius: 36px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 36px;
+    padding: 0;
+    line-height: 36px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "OUI";
+    padding-right: 25px;
+    background-color: #009688;
+    color: white;
+}
+
+.onoffswitch-inner:after {
+    content: " NON";
+    padding-right: 15px;
+    background-color: #009688;
+    color: white;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 36px;
+    margin: 0px;
+    background: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50px;
+    border: 2px solid #009688;
+    border-radius: 36px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+#link {
+    color: #6A1B9A;
+    text-decoration: none;
+}
+
+/*Couleurs des % sur la carte et le menu*/
+#goodtext {
+    color: #01579B;
+}
+
+#badtext {
+    color: #D32F2F;
+}
+
+/*Mise en forme de l'affichage en liste*/
+
+.picklist button {
+    display: block;
+    color: #fff;
+    background-color: #009688;
+    opacity: 0.8;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 0.5em 0.5em 0 5%;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    position: relative;
+    text-align: left;
+}
+
+/*Distance*/
+#dist {
+    float: right;
+    top: 55%;
+    right: 10%;
+    z-index: 1000;
+    position: absolute;
+}
+
+#back_button { /*Retour vers la map*/
+    left: 10px;
+    position: fixed;
+    top: 10px;
+}
+
+#back_buttonbis { /*Retour vers la sélection*/
+    left: 10px;
+    position: fixed;
+    top: 10px;
+}
+
+/*Check button pour prise de leçon*/
+#ck-button {
+    background-color: #009688;
+    overflow: auto;
+    float: left;
+    width: 49.5%;
+    height: 33%;
+    color: white;
+}
+
+#ck-button:hover {
+    background-color: #009688;
+    transition: background-color 0.5s ease-out;
+    overflow: auto;
+    color: black;
+}
+
+#ck-button label {
+    width: 4.0em;
+    width: 100%;
+}
+
+#ck-button label span {
+    text-align: center;
+    padding: 3px 0px;
+    display: block;
+}
+
+#ck-button input:checked + span {
+    background-color: #FDD835;
+    color: black;
+    height: 100%;
+}
+
+#ck-button input + span {
+    height: 100%;
+}
+
+/*Placeholders améliorés*/
+::-webkit-input-placeholder {
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+#pac-input::-webkit-input-placeholder {
+    color: darkgrey;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+/*Écran de chargement*/
+#loadiv {
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+    opacity: 0.25;
+    position: absolute;
+    z-index: 2000;
+    top: 0px;
+    left: 0px;
+}
+
+.spinner {
+    position: absolute;
+    z-index: 2500;
+    top: 45%;
+    left: 40%;
+    margin-right: -40%;
+    -webkit-animation: rotator 1.4s linear infinite;
+}
+
+@-webkit-keyframes rotator {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+    }
+}
+
+.path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    -webkit-transform-origin: center;
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+    0% {
+        stroke: #FFEE58;
+    }
+    25% {
+        stroke: #FFEB3B;
+    }
+    50% {
+        stroke: #FDD835;
+    }
+    75% {
+        stroke: #FFEB3B;
+    }
+    100% {
+        stroke: #FFEE58;
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+    }
+}
+
+/*      Radio button slider css      */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+.toggle_radio > * > * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    margin: 20px 0;
+}
+
+.toggle_radio {
+    position: relative;
+    background: #009688; /* background*/
+    margin: 4px auto;
+    overflow: hidden;
+    padding: 0 !important;
+    border-radius: 50px;
+    position: relative;
+    height: 26px;
+    width: 224px;
+}
+
+.toggle_radio > * {
+    float: left;
+}
+
+.toggle_radio input[type=radio] {
+    display: none;
+}
+
+.toggle_radio label {
+    font: 90%/1.618 "Source Sans Pro";
+    color: white;
+    z-index: 0;
+    display: block;
+    width: 50px;
+    height: 20px;
+    margin: 3px 3px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+}
+
+.toggle_option_slider {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    border-radius: 50px;
+    transition: all .4s ease;
+}
+
+#first_toggle:checked ~ .toggle_option_slider {
+    background: #00796B;
+    left: 3px;
+}
+
+#second_toggle:checked ~ .toggle_option_slider {
+    background: #00796B;
+    left: 59px;
+}
+
+#third_toggle:checked ~ .toggle_option_slider {
+    background: #00796B;
+    left: 115px;
+}
+
+#fourth_toggle:checked ~ .toggle_option_slider {
+    background: #00796B;
+    left: 171px;
+}
+
+.infowindows {
+    position: absolute;
+    z-index: 10;
+}
+
+.toggle_radio > label > p {
+    position: relative;
+    z-index: 99;
+}
+
+.bigbuttonaeinfo {
+    text-align: left;
+    width: 100% !important;
+}
+
+.texteinfo {
+    font-size: 1.2em;
+}
+
+.cbinfo {
+    height: 2px;
+    border-color: transparent;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+
+.buttoninfocb {
+    width: 40% !important;
+    float: right;
+    margin-right: 20px;
+}
+
+#devisok {
+    width: 10%;
+    float: right;
+}
+
+#header-bar-date-prog {
+    position: fixed;
+    top: 40px;
+    left: 0px;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: #009688;
+    display: inline-block;
+    width: 100%;
+}
+
+#date-bar-date {
+    text-align: center;
+    color: white;
+}
+
+#btn-prev-date {
+    background-color: transparent;
+    left: 25px;
+    position: fixed;
+    top: 55px;
+    outline: none;
+    border: 0;
+    height: 40px;
+    width: 50px;
+    background-image: url(../img/back.png);
+    background-repeat: no-repeat;
+}
+
+#btn-next-date {
+    background-color: transparent;
+    right: 1px;
+    position: fixed;
+    top: 55px;
+    outline: none;
+    border: 0;
+    height: 40px;
+    width: 50px;
+    background-image: url(../img/next.png);
+    background-repeat: no-repeat;
+}
+
+#liste_creneaux {
+    width: 100%;
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 70px 0 16%;
+}
+
+.item {
+    position: relative;
+    margin: 0px auto 0px auto;
+    list-style: none;
+    width: 100%;
+    height: 100px;
+    background-color: #009688;
+    border-bottom: solid 1px white;
+    line-height: 68px;
+    vertical-align: middle;
+    color: white;
+    transition: background-color 0.3s ease-out;
+}
+
+.prix {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 33.33333%;
+    color: white;
+}
+
+.cher {
+    color: red;
+    font-weight: bolder;
+}
+
+.pas-cher {
+    color: limegreen;
+    font-weight: bolder;
+}
+
+.astre {
+    position: relative;
+    height: 50px;
+    vertical-align: middle;
+    margin-top: 25px;
+}
+
+.jn {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 33.33333%;
+    vertical-align: middle;
+}
+
+.creneaux {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 33.33333%;
+    vertical-align: middle;
+    color: white;
+}
+
+#footer-button {
+    z-index: 10;
+    position: fixed;
+    bottom: 0px;
+    height: 12%;
+    width: 100%;
+}
+
+#button-left {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: #00796B;
+    outline: none;
+    border-right: none;
+    color: white;
+
+}
+
+#button-right {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: #00796B;
+    outline: none;
+
+    color: white;
+}
+
+.selected-hour {
+    background-color: #2d2d2d;
+}
+
+/*Render pouce components*/
+#pouce-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 15%;
+}
+
+#pouce-parfait {
+    margin: 0 auto;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    width: 40%;
+    display: block;
+}
+
+#pouce-st {
+    margin: 0 auto;
+    font-size: x-large;
+    text-align: center;
+    width: 60%;
+    display: block;
+}
+
+#pouce-img {
+    margin: 0 auto;
+    width: 40%;
+    display: block;
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+
+#pouce-txt {
+    margin: 0 auto;
+    font-size: larger;
+    width: 70%;
+    display: block;
+    text-align: center;
+}
+
+#pouce-btn {
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    outline: none;
+    border: none;
+    background-color: #EF4836;
+    color: white;
+    margin: 0 auto;
+    bottom: 0px;
+}
+
+#pouce-btn-title {
+    text-align: center;
+    display: block;
+    font-size: large;
+
+}
+
+#pouce-btn-content {
+    text-align: center;
+    display: block;
+}
+
+#pouce-btn-img {
+    float: left;
+}
+
+
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    padding-top: 30px;
+    background:#f7f7f7;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#00796B;
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+    text-decoration:none;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background: #00a697;
+    /* Type */
+    text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
+    text-align: left;
+}
+.planning-dateC{
+    display: block;
+    vertical-align: top;
+    text-align: left;
+}
+.planning-img{
+    display: block;
+    vertical-align: top;
+    float:right;
+    width:50px;
+}
+.planning-prix{
+    display: block;
+    vertical-align: top;
+
+    text-align: left;
+    width:120px;
+}
+.planning-lieu{
+    display: block;
+    vertical-align: top;
+    text-align: left;
+}
+.planning-forfait{
+    padding-bottom: 10px;
+}
+.planning-cancel{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: large;
+    background-color: #EF4836;
+    color: white;
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+
+/********************************renderNotation*************************************/
+#valider-btn{
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    outline: none;
+    border: none;
+    background-color: #00796B;
+    color: white;
+    margin: 0 auto;
+    bottom: 0px;
+}
+
+#notation-maintenant {
+    margin: 0 auto;
+    font-size: x-large;
+    padding-top: 60px;
+    text-align: center;
+    width: 60%;
+    display: block;
+}
+

@@ -1,0 +1,247 @@
+/*-------------------------------------------------Detail Lesson -----------------------------------------------------*/
+.dl-lesson-header {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding:4%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    height: 20%;
+    line-height: 1px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.dl-lesson-title {
+    font-size: large;
+    padding-bottom: 5px;
+}
+
+.dl-lesson-content {
+    display: block;
+}
+
+.dl-lesson-date {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+.dl-lesson-heure {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.dl-title {
+    font-weight: bolder;
+    text-align: left;
+}
+
+/*-----------------Moniteur-------------------------*/
+.dl-mon-container {
+    width: 100%;
+    height: 20%;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:4%;
+    padding-bottom:0px;
+    padding-top:0px;
+}
+
+.dl-mon-header {
+    width: 100%;
+}
+
+.dl-mon-title {
+
+}
+
+.dl-mon-body {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.dl-mon-av-container {
+    float: left;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.dl-mon-avatar {
+    position: absolute;
+    top: 50%;
+    min-height: 100%;
+    max-height: 100%;
+    display: block;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.dl-mon-content {
+    display: inline-block;
+    float: left;
+    margin-left: 5%;
+    height: 100%;
+    text-align: left;
+    line-height: 1px;
+}
+
+.dl-mon-prenom-nom {
+
+}
+
+.dl-mon-note-icon {
+    width: 20px;
+    display: inline-block;
+}
+
+.dl-mon-note {
+    font-weight: bolder;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.dl-mon-ae {
+
+}
+/*-----------------Facturation-------------------------*/
+.dl-fact-container {
+    width: 100%;
+    height: 15%;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:4%;
+    padding-top:0px;
+    padding-bottom:0px;
+
+}
+
+.dl-fact-header {
+    width: 100%;
+}
+
+.dl-fact-title {
+
+}
+
+.dl-fact-content {
+    width: 95%;
+    display: inline-block;
+}
+
+.dl-fact-prix {
+    display: inline-block;
+    width: 46%;
+    text-align: left;
+    margin-left: 1%;
+}
+
+.dl-fact-chiffreCB {
+    display: inline-block;
+    width: 30%;
+    color: #5f5f5f;
+}
+
+.dl-fact-cbimg {
+    display: inline-block;
+    width: 20%;
+    width: 50px;
+    margin-right: 4%;
+}
+/*-----------------Notation-------------------------*/
+.dl-note-container {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:4%;
+    padding-bottom:0px;
+    padding-top:0px;
+
+
+}
+
+.dl-note-header {
+    width: 100%;
+}
+
+.dl-note-title {
+
+}
+
+.dl-note-content {
+    width: 95%;
+    height: auto;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.dl-note-content-void {
+    text-align: center;
+    color: grey;
+}
+
+.dl-note-footer {
+    width: 95%;
+
+}
+
+.dl-note-footer-left {
+    display: inline-block;
+    width: 40%;
+    border-right: solid #5f5f5f thin;
+    line-height: 100%;
+}
+
+.dl-note-footer-right {
+    float: right;
+    width: 40%;
+    line-height: 1px;
+
+}
+
+.dl-note-note {
+    display: inline-block;
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.dl-note-img {
+    margin-left: 10%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dl-note-hrest {
+
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+.dl-note-av-ex {
+    text-align: left;
+    font-size: small;
+    margin-left: 10%;

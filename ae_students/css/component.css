@@ -1,0 +1,69 @@
+/*Slide and push menu thanks to http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+
+/* Style général */
+.slidemenu {
+	background-color: #5e35b1;
+	position: fixed;
+	margin-top: 40px;
+	z-index: 2000;
+	min-height: 300px;
+	text-align: center;
+} 
+
+.slidemenu a:hover {
+	background-color: #FDD835;
+	color: #4A148C;
+}
+
+.slidemenu a {
+	display: block;
+	color: #fff;
+	font-weight: 300;
+	transition: background-color 0.5s ease-out;
+}
+
+.menu-vertical a {
+	border-bottom: 1px solid black;
+	text-decoration: none;
+}
+
+.menu-vertical {
+	width: 90%;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+	right: -90%;
+}
+
+.menu-vertical.menu-open {
+	right: 0px;
+}
+
+
+.menu-vertical a {
+	border-bottom: 1px solid black;
+	padding: 10% 5% 10% 5%;
+	text-decoration: none;
+}
+
+/* Transitions */
+
+.slidemenu,
+.slidemenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#span_ko{color: #D32F2F; font-weight: bold; font-size: 140%;}
+#span_ok{color: #26A69A; font-weight: bold; font-size: 140%;}
+
+#leftstatus {
+	float: left;
+	text-align: left;
+}
+
+#rightstatus {
+	float: right;
+	text-align: left;
+}
